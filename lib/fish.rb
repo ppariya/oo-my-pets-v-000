@@ -9,8 +9,8 @@ class Fish
     @mood = "nervous"
   end
 
-  def mood=(mood)
-    self.mood = mood
-  end 
-    
+  def mood=(feeling)
+    self.mood = feeling
+  end
+
 end
