@@ -5,8 +5,8 @@ class Owner
   @@all = []
   @@count = 0
 
-  def initialize(name)
-    @species = "human"
+  def initialize(name, species)
+    @species = species
     @name = name
     @pets = {:fishes => [], :dogs => [], :cats => []}
     @@count += 1
@@ -58,7 +58,7 @@ class Owner
   end
 
   def sell_pets
-    pets.each {|species, animal| 
+    pets.each {|species, animal|
       animal.each{|name|
         name.mood = "nervous"}}
     pets.clear
