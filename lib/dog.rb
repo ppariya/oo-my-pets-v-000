@@ -8,4 +8,9 @@ class Dog
     @name = name
     @mood = "nervous"
   end
+
+  def mood=(feeling)
+
+    @mood = feeling
+  end
 end
