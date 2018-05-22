@@ -10,7 +10,7 @@ class Fish
   end
 
   def mood=(feeling)
-    feeling = feeling
+
     @mood = feeling
   end
 
